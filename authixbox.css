@@ -1,0 +1,76 @@
+/* Styling for the author box */
+.author-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Space around the author box */
+}
+
+/* Styling for the author's avatar */
+.author-box .avatar img {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    border-radius: 50%; /* Circular avatar */
+    border: 2px solid #ddd; /* Light border around the avatar */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Styling for the author's information */
+.author-box .author-info {
+    max-width: 600px; /* Maximum width of the author info section */
+    margin-left: 20px; /* Space between the avatar and the info */
+}
+
+/* Styling for the author's name */
+.author-box .author-title {
+    font-size: 20px; /* Font size for the name */
+    font-weight: bold; /* Bold font weight */
+    color: #333; /* Dark text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for the author's description */
+.author-box .author-summary {
+    margin-top: 10px; /* Space above the summary */
+}
+
+.author-box .author-description {
+    font-size: 14px; /* Font size for the description */
+    color: #666; /* Lighter text color */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Styling for the author's links */
+.author-box .author-links {
+    margin-top: 15px; /* Space above the links */
+}
+
+.author-box .author-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #0073e6; /* Blue color for links */
+    font-weight: bold; /* Bold font weight for links */
+}
+
+.author-box .author-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .author-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .author-box .avatar {
+        margin-bottom: 15px; /* Space below the avatar */
+    }
+
+    .author-box .author-info {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+}
